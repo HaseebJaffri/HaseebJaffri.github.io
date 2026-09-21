@@ -3,35 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#070611" />
-  <meta name="description" content="Haseeb Ali Jaffri — Team Lead, Games Department. Unity game development, mobile publishing, monetization, Firebase, performance optimization and live operations." />
+  <meta name="theme-color" content="#060711" />
+  <meta name="description" content="Haseeb Ali Jaffri — Team Lead, Games Department. Unity game development, mobile publishing, monetization, Firebase, optimization and live operations." />
   <meta name="author" content="Haseeb Ali Jaffri" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Haseeb Ali Jaffri | Team Lead — Games Department" />
-  <meta property="og:description" content="Unity game development, mobile publishing, monetization, analytics and live operations." />
+  <meta property="og:description" content="Building, shipping and scaling mobile games with Unity, monetization, analytics and multi-store publishing." />
   <meta property="og:url" content="https://haseebjaffri.github.io/" />
   <title>Haseeb Ali Jaffri | Team Lead — Games Department</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
-  <link rel="stylesheet" href="/assets/css/gaming-portfolio-v2.css?v=3" />
-  <style>
-    .profile-label span{font-size:0!important}
-    .profile-label span::after{content:"TEAM LEAD · GAMES DEPARTMENT";font:700 .64rem/1.2 var(--display);letter-spacing:.18em;color:#b77dff}
-  </style>
+  <link rel="stylesheet" href="/assets/css/gaming-portfolio-v3.css?v=1" />
 </head>
 <body>
   <div class="noise"></div>
-  <div class="grid-glow grid-glow-a"></div>
-  <div class="grid-glow grid-glow-b"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
 
   <header class="topbar" id="top">
     <a class="brand" href="#home" aria-label="Home">
       <span class="brand-mark">HJ</span>
-      <span class="brand-text">HASEEB<span>.DEV</span></span>
+      <span class="brand-text">Haseeb Ali <span>Jaffri</span></span>
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -43,190 +39,110 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#games">Games</a>
-      <a href="#expertise">Skills</a>
+      <a href="#skills">Skills</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="nav-cta" href="/assets/resume/resume.pdf" target="_blank" rel="noreferrer">
-      <i class="fa-solid fa-download"></i> Resume
-    </a>
+    <div class="top-actions">
+      <a class="hire-link" href="#collaborate">Hire Me</a>
+      <a class="resume-link" href="/assets/resume/resume.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-download"></i> Resume</a>
+    </div>
   </header>
 
   <main>
     <section class="hero section" id="home">
-      <div class="hero-particles" aria-hidden="true">
-        <i></i><i></i><i></i><i></i><i></i><i></i>
-      </div>
-
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> Available for New Projects</div>
-        <h1>
-          Building Games
-          <span class="gradient-text">Players Love</span>
-        </h1>
+        <div class="eyebrow"><span class="status-dot"></span> Open to strong game collaborations</div>
+        <h1>Building Games <span class="gradient-text">Players Love</span></h1>
         <p class="hero-lead">
-          <strong>Team Lead — Games Department</strong> with 7+ years of Unity experience building, shipping and optimizing mobile games. Specialized in <strong>Unity, C#, Android, monetization, Firebase and multi-store publishing</strong>.
+          <strong>Team Lead — Games Department</strong> with 7+ years of Unity experience building, shipping and optimizing mobile games. I work across <strong>Unity, C#, Android, monetization, Firebase, performance and multi-store publishing</strong> — from production to live operations.
         </p>
 
         <div class="hero-micro">
           <span><i class="fa-brands fa-unity"></i> Unity 3D / 2D</span>
           <span><i class="fa-solid fa-code"></i> C#</span>
           <span><i class="fa-brands fa-android"></i> Android</span>
-          <span><i class="fa-solid fa-chart-line"></i> Live Ops</span>
+          <span><i class="fa-solid fa-coins"></i> Monetization</span>
+          <span><i class="fa-solid fa-fire"></i> Firebase</span>
         </div>
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="#games"><i class="fa-solid fa-gamepad"></i> View My Games</a>
-          <a class="btn btn-ghost" href="#contact"><i class="fa-solid fa-paper-plane"></i> Let's Talk</a>
+          <a class="btn btn-ghost" href="#collaborate"><i class="fa-solid fa-handshake"></i> Let's Collaborate</a>
+        </div>
+
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/haseeb-ali-jaffri-58a313122/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/HaseebJaffri/" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:s.haseebjaffri@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
 
       <div class="hero-visual reveal">
-        <div class="profile-shell">
-          <div class="profile-scan"></div>
-          <img src="/assets/img/passport-new.jpg" alt="Haseeb Ali Jaffri" class="profile-image" />
-          <div class="profile-label">
-            <span>Team Lead · Games Department</span>
-            <strong>HASEEB</strong>
+        <article class="profile-card">
+          <div class="profile-topline">Player Profile</div>
+          <div class="avatar-wrap">
+            <div class="avatar-icon">🎮</div>
+            <h2>Haseeb Ali Jaffri</h2>
+            <p>Team Lead · Games Department</p>
           </div>
-        </div>
 
-        <div class="hero-console">
-          <div class="console-top">
-            <span>PLAYER PROFILE</span>
-            <span class="console-live">ONLINE</span>
+          <div class="profile-stats">
+            <div><strong>7+</strong><span>Years</span></div>
+            <div><strong id="profileGameCount">28</strong><span>Games</span></div>
+            <div><strong>6</strong><span>Stores</span></div>
           </div>
-          <div class="console-row"><span>ROLE</span><strong>Team Lead — Games</strong></div>
-          <div class="console-row"><span>EXPERIENCE</span><strong>7+ Years</strong></div>
-          <div class="console-row"><span>FOCUS</span><strong>Mobile Games</strong></div>
-          <div class="console-bar"><span style="width: 94%"></span></div>
-        </div>
+
+          <div class="profile-lines">
+            <div class="profile-line"><span>Core</span><strong>Unity + C#</strong></div>
+            <div class="profile-line"><span>Focus</span><strong>Mobile Games</strong></div>
+            <div class="profile-line"><span>Strength</span><strong>Ship + Optimize</strong></div>
+            <div class="skill-meter"><i></i></div>
+          </div>
+        </article>
       </div>
+
+      <div class="scroll-cue" aria-hidden="true"><i></i><span>Scroll</span></div>
     </section>
 
     <section class="stats-strip reveal" aria-label="Portfolio highlights">
       <div><strong id="gameCount">28</strong><span>Games showcased</span></div>
-      <div><strong>3</strong><span>Google Play portfolios</span></div>
-      <div><strong>5</strong><span>Alternative/OEM stores</span></div>
-      <div><strong>3+</strong><span>Ad / mediation stacks</span></div>
+      <div><strong>7+</strong><span>Years in Unity</span></div>
+      <div><strong>6</strong><span>Publishing channels</span></div>
+      <div><strong>3+</strong><span>Monetization stacks</span></div>
     </section>
 
     <section class="section" id="about">
       <div class="section-heading reveal">
         <span class="section-kicker">01 // ABOUT</span>
         <h2>Game development with a <span>product mindset.</span></h2>
-        <p>
-          I work across the full mobile game lifecycle — from development and optimization to monetization,
-          store publishing, analytics, crash monitoring and remote configuration.
-        </p>
+        <p>I work across the full mobile game lifecycle — development, optimization, monetization, publishing, analytics, crash monitoring and post-launch tuning.</p>
       </div>
 
       <div class="about-grid">
-        <article class="panel panel-large reveal">
+        <article class="panel reveal">
           <div class="panel-icon"><i class="fa-solid fa-chess-knight"></i></div>
           <h3>Leading the Games Department</h3>
-          <p>
-            As Team Lead — Games Department at JanBark Technologies, I lead game execution while staying close
-            to hands-on Unity development, debugging, optimization, SDK integrations and release work.
-          </p>
-          <div class="tag-cloud">
-            <span>Team Leadership</span><span>Code Reviews</span><span>Planning</span><span>Mentoring</span>
-            <span>Release Ownership</span><span>Performance</span>
-          </div>
+          <p>I lead game execution while staying hands-on with Unity development, debugging, SDK integrations, optimization, release planning and developer guidance.</p>
+          <div class="tag-cloud"><span>Team Leadership</span><span>Code Reviews</span><span>Planning</span><span>Mentoring</span><span>Release Ownership</span></div>
         </article>
-
         <article class="panel reveal">
           <div class="panel-icon"><i class="fa-solid fa-rocket"></i></div>
           <h3>Ship</h3>
           <p>Build and release simulation, puzzle, casual, racing, stunt and shooting games for Android.</p>
         </article>
-
         <article class="panel reveal">
           <div class="panel-icon"><i class="fa-solid fa-gauge-high"></i></div>
           <h3>Optimize</h3>
-          <p>Improve mobile performance, stability, loading, compatibility and player experience.</p>
+          <p>Improve stability, performance, compatibility, loading and overall player experience on mobile devices.</p>
         </article>
-      </div>
-    </section>
-
-    <section class="section" id="expertise">
-      <div class="section-heading reveal">
-        <span class="section-kicker">02 // EXPERTISE</span>
-        <h2>My production <span>stack.</span></h2>
-      </div>
-
-      <div class="expertise-grid">
-        <article class="loadout-card reveal">
-          <div class="loadout-head"><span class="loadout-number">A1</span><i class="fa-solid fa-gamepad"></i></div>
-          <h3>Game Development</h3>
-          <p>Unity, C#, gameplay systems, UI, level flows, debugging, optimization and Android release builds.</p>
-          <div class="loadout-tags"><span>Unity</span><span>C#</span><span>Android</span><span>Git</span></div>
-        </article>
-
-        <article class="loadout-card reveal">
-          <div class="loadout-head"><span class="loadout-number">A2</span><i class="fa-solid fa-coins"></i></div>
-          <h3>Monetization</h3>
-          <p>Ad integration and mediation implementation focused on reliable delivery and sustainable revenue.</p>
-          <div class="loadout-tags"><span>AdMob</span><span>AppLovin MAX</span><span>TopOn</span></div>
-        </article>
-
-        <article class="loadout-card reveal">
-          <div class="loadout-head"><span class="loadout-number">A3</span><i class="fa-solid fa-fire-flame-curved"></i></div>
-          <h3>Firebase & Live Ops</h3>
-          <p>Measure player behavior, monitor production stability and tune experiences after release.</p>
-          <div class="loadout-tags"><span>Analytics</span><span>Crashlytics</span><span>Remote Config</span></div>
-        </article>
-
-        <article class="loadout-card reveal">
-          <div class="loadout-head"><span class="loadout-number">A4</span><i class="fa-solid fa-store"></i></div>
-          <h3>Publishing Ecosystem</h3>
-          <p>Experience preparing and publishing mobile titles across Google Play and alternative/OEM stores.</p>
-          <div class="loadout-tags"><span>Google Play</span><span>Transsion</span><span>XGames</span><span>XPlay</span><span>Vivo Store</span><span>Mi Store</span></div>
-        </article>
-      </div>
-
-      <div class="store-lane reveal">
-        <div class="lane-label">PUBLISHING CHANNELS</div>
-        <div class="store-track">
-          <span><i class="fa-brands fa-google-play"></i> Google Play</span>
-          <span><i class="fa-solid fa-mobile-screen"></i> Transsion</span>
-          <span><i class="fa-solid fa-bolt"></i> XGames</span>
-          <span><i class="fa-solid fa-play"></i> XPlay</span>
-          <span><i class="fa-solid fa-mobile-screen-button"></i> Vivo Store</span>
-          <span><i class="fa-solid fa-store"></i> Mi Store</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section games-section" id="games">
-      <div class="section-heading reveal">
-        <span class="section-kicker">03 // SHIPPED GAMES</span>
-        <h2>A portfolio built across <span>multiple game accounts.</span></h2>
-        <p>Browse the current games from Mishi Games Studio, gamesodo and Malam.</p>
-      </div>
-
-      <div class="game-toolbar reveal">
-        <div class="filter-tabs" id="studioFilters" role="tablist" aria-label="Filter games by studio">
-          <button class="filter-btn active" data-filter="all">All Games</button>
-          <button class="filter-btn" data-filter="Mishi Games Studio">Mishi Games Studio</button>
-          <button class="filter-btn" data-filter="gamesodo">gamesodo</button>
-          <button class="filter-btn" data-filter="Malam">Malam</button>
-        </div>
-        <label class="game-search"><i class="fa-solid fa-magnifying-glass"></i><input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games" /></label>
-      </div>
-
-      <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
-
-      <div class="studio-links reveal">
-        <a href="https://play.google.com/store/apps/developer?id=Mishi+Games+Studio" target="_blank" rel="noreferrer">Mishi Games Studio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        <a href="https://play.google.com/store/apps/developer?id=gamesodo" target="_blank" rel="noreferrer">gamesodo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        <a href="https://play.google.com/store/apps/developer?id=Malam" target="_blank" rel="noreferrer">Malam <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       </div>
     </section>
 
     <section class="section" id="experience">
       <div class="section-heading reveal">
-        <span class="section-kicker">04 // EXPERIENCE</span>
+        <span class="section-kicker">02 // EXPERIENCE</span>
         <h2>From junior developer to <span>games team lead.</span></h2>
       </div>
 
@@ -239,32 +155,105 @@
       </div>
     </section>
 
-    <section class="section education-section" id="education">
-      <div class="education-card reveal">
-        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-        <div><span class="section-kicker">05 // EDUCATION</span><h2>BS Software Engineering</h2><p>University of Engineering & Technology, Taxila</p><div class="loadout-tags"><span>OOP</span><span>Programming Fundamentals</span><span>Data Structures</span></div></div>
+    <section class="section games-section" id="games">
+      <div class="section-heading reveal">
+        <span class="section-kicker">03 // SHIPPED GAMES</span>
+        <h2>Games I've worked on across <span>different genres.</span></h2>
+        <p>Only the games are showcased here — no company-owned account names. Each card links directly to its Google Play listing where available.</p>
+      </div>
+
+      <div class="game-toolbar reveal">
+        <div class="filter-tabs" id="gameFilters" role="tablist" aria-label="Filter games by genre">
+          <button class="filter-btn active" data-filter="all">All Games</button>
+          <button class="filter-btn" data-filter="Puzzle">Puzzle</button>
+          <button class="filter-btn" data-filter="Simulation">Simulation</button>
+          <button class="filter-btn" data-filter="Racing">Racing</button>
+          <button class="filter-btn" data-filter="Action">Action</button>
+          <button class="filter-btn" data-filter="Casual">Casual</button>
+        </div>
+        <label class="game-search"><i class="fa-solid fa-magnifying-glass"></i><input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games" /></label>
+      </div>
+
+      <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <span class="section-kicker">04 // SKILLS</span>
+        <h2>A production stack built for <span>mobile game delivery.</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-gamepad"></i></div><h3>Game Development</h3><p>Gameplay systems, UI flows, debugging, optimization and Android release builds.</p><div class="skill-tags"><span>Unity</span><span>C#</span><span>Android</span><span>Git</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-coins"></i></div><h3>Monetization</h3><p>Ad implementation and mediation integration for production mobile games.</p><div class="skill-tags"><span>AdMob</span><span>AppLovin MAX</span><span>TopOn</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-fire-flame-curved"></i></div><h3>Firebase & Live Ops</h3><p>Measure behavior, monitor production stability and tune experiences after launch.</p><div class="skill-tags"><span>Analytics</span><span>Crashlytics</span><span>Remote Config</span></div></article>
+        <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-store"></i></div><h3>Publishing</h3><p>Preparing releases and supporting publishing across mainstream and alternative Android stores.</p><div class="skill-tags"><span>Google Play</span><span>OEM Stores</span><span>Release Ops</span></div></article>
+      </div>
+
+      <div class="publishing-lane reveal"><strong>PUBLISHING CHANNELS</strong><div class="publishing-list"><span>Google Play</span><span>Transsion</span><span>XGames</span><span>XPlay</span><span>Vivo Store</span><span>Mi Store</span></div></div>
+    </section>
+
+    <section class="section" id="collaborate">
+      <div class="section-heading reveal">
+        <span class="section-kicker">05 // COLLABORATE</span>
+        <h2>Need someone who can <span>own the game, not just the task?</span></h2>
+        <p>I can contribute hands-on in Unity while also thinking about stability, monetization, release readiness and the team around the product.</p>
+      </div>
+
+      <div class="collab-grid">
+        <article class="collab-card primary reveal">
+          <h3>Why collaborate with me?</h3>
+          <p>I combine engineering execution with production awareness — useful when a game needs to move from idea or inherited codebase to a stable, monetized, published product.</p>
+          <div class="collab-list">
+            <div class="collab-point"><i class="fa-solid fa-code"></i><div><strong>Hands-on technical ownership</strong><span>Unity implementation, debugging, SDK integration and performance work.</span></div></div>
+            <div class="collab-point"><i class="fa-solid fa-chart-line"></i><div><strong>Post-launch thinking</strong><span>Analytics, Crashlytics, Remote Config and iterative improvements after release.</span></div></div>
+            <div class="collab-point"><i class="fa-solid fa-users"></i><div><strong>Team leadership</strong><span>Planning, code reviews, mentoring and coordinating delivery across developers.</span></div></div>
+          </div>
+          <div class="collab-cta"><a class="btn btn-primary" href="mailto:s.haseebjaffri@gmail.com?subject=Game%20Collaboration%20with%20Haseeb"><i class="fa-solid fa-paper-plane"></i> Start a Collaboration</a><a class="btn btn-ghost" href="#games">See Shipped Games</a></div>
+        </article>
+
+        <article class="collab-card reveal">
+          <h3>Good fit for</h3>
+          <div class="collab-list">
+            <div class="collab-point"><i class="fa-solid fa-wand-magic-sparkles"></i><div><strong>New mobile game builds</strong><span>Prototype to production-ready Android game.</span></div></div>
+            <div class="collab-point"><i class="fa-solid fa-screwdriver-wrench"></i><div><strong>Existing game improvements</strong><span>Fixes, SDK upgrades, performance, monetization and release updates.</span></div></div>
+            <div class="collab-point"><i class="fa-solid fa-people-group"></i><div><strong>Teams needing senior Unity support</strong><span>Technical direction plus hands-on delivery.</span></div></div>
+            <div class="collab-point"><i class="fa-solid fa-rocket"></i><div><strong>Multi-store Android publishing</strong><span>Release work beyond a single marketplace.</span></div></div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
+    <section class="section" id="faq">
+      <div class="section-heading reveal">
+        <span class="section-kicker">06 // FAQ</span>
+        <h2>Quick answers before <span>we work together.</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal"><summary>What kind of game projects can you work on?</summary><p>Unity-based Android projects across casual, puzzle, simulation, racing, stunt and shooting genres — including new builds, feature updates and inherited codebases.</p></details>
+        <details class="faq-item reveal"><summary>Are you hands-on or mainly a team lead?</summary><p>Both. My current role includes team leadership, but I stay hands-on with Unity, C#, debugging, optimization, SDK integrations and release-related engineering.</p></details>
+        <details class="faq-item reveal"><summary>Can you improve an existing game instead of building from scratch?</summary><p>Yes. I can work on performance issues, crashes, SDK updates, UI/gameplay changes, monetization integrations, Firebase setup and store-readiness for an existing Unity project.</p></details>
+        <details class="faq-item reveal"><summary>Which monetization and analytics tools have you worked with?</summary><p>AdMob, AppLovin MAX and TopOn for ads/mediation, plus Firebase Analytics, Crashlytics and Remote Config for measurement, stability and live tuning.</p></details>
+        <details class="faq-item reveal"><summary>Do you have experience beyond Google Play?</summary><p>Yes. My publishing experience also includes Transsion, XGames, XPlay, Vivo Store and Mi Store.</p></details>
+        <details class="faq-item reveal"><summary>What's the best way to discuss a collaboration?</summary><p>Send a short email with the game type, current stage, platform, key problem and expected scope. I can then quickly identify where I can contribute most effectively.</p></details>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="education-card reveal"><div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div><div><span class="section-kicker">07 // EDUCATION</span><h2>BS Software Engineering</h2><p>University of Engineering & Technology, Taxila</p></div></div>
+    </section>
+
+    <section class="section" id="contact">
       <div class="contact-card reveal">
-        <div class="contact-copy"><span class="section-kicker">06 // CONTACT</span><h2>Have a game, product or team challenge?</h2><p>Let's talk about Unity development, mobile game production, optimization, monetization or publishing.</p></div>
-        <div class="contact-actions">
-          <a href="mailto:s.haseebjaffri@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
-          <a href="tel:+923117310754"><i class="fa-solid fa-phone"></i><span>Call</span></a>
-          <a href="https://github.com/HaseebJaffri/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
-          <a href="https://www.linkedin.com/in/haseeb-ali-jaffri-58a313122/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
-        </div>
+        <div class="contact-copy"><span class="section-kicker">08 // CONTACT</span><h2>Have a game, product or team challenge?</h2><p>Send the context. If my experience fits the problem, we can move quickly from discussion to a concrete plan.</p></div>
+        <div class="contact-actions"><a href="mailto:s.haseebjaffri@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span></a><a href="tel:+923117310754"><i class="fa-solid fa-phone"></i><span>Call</span></a><a href="https://github.com/HaseebJaffri/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span></a><a href="https://www.linkedin.com/in/haseeb-ali-jaffri-58a313122/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <span>© <span id="year"></span> Haseeb Ali Jaffri</span>
-    <span class="footer-status"><i></i> PORTFOLIO // ONLINE</span>
-    <a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
-  </footer>
+  <footer><span>© <span id="year"></span> Haseeb Ali Jaffri</span><span class="footer-status"><i></i> AVAILABLE FOR THE RIGHT PROJECT</span><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a></footer>
 
-  <script src="/assets/js/portfolio.js?v=3"></script>
+  <script src="/assets/js/portfolio.js?v=4"></script>
 </body>
 </html>
