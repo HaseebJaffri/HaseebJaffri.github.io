@@ -1,70 +1,80 @@
 const games = [
-  { title: "Nut & Bolt: Screw Puzzle games", studio: "Mishi Games Studio", genre: "Puzzle", icon: "🔩", accent: "#39e7ff", url: "https://play.google.com/store/apps/details?id=com.mgs.nuts.and.bolts.puzzle.game" },
-  { title: "Antistress: Relaxing Toy Games", studio: "Mishi Games Studio", genre: "Simulation", icon: "🫧", accent: "#ff4fd8", url: "https://play.google.com/store/apps/details?id=com.mishi.antistress.relief.relaxing.calming.games" },
-  { title: "Arrow Puzzle Games: Arrow Play", studio: "Mishi Games Studio", genre: "Puzzle", icon: "🏹", accent: "#8b5cff", url: "https://play.google.com/store/apps/details?id=com.mgs.snakeescape.arrow.path.pencil.out" },
-  { title: "Western Girls Fashion Game", studio: "Mishi Games Studio", genre: "Casual", icon: "👗", accent: "#ff71cf", url: "https://play.google.com/store/apps/details?id=com.msh.fashion.girl.game.offline.free" },
-  { title: "Ultimate Bottle Flip 3D Game", studio: "Mishi Games Studio", genre: "Casual", icon: "🧴", accent: "#7dff9b", url: "https://play.google.com/store/apps/details?id=com.fc.p.jb.water.bottle.flip.tap.jump.game" },
-  { title: "Car Racing - Car Race 3D Game", studio: "Mishi Games Studio", genre: "Racing", icon: "🏎️", accent: "#ff7849", url: "https://play.google.com/store/apps/details?id=com.mishi.traffic.rider.car.racing.game" },
-  { title: "Car Stunt Games 3D Racing Game", studio: "Mishi Games Studio", genre: "Racing", icon: "🚗", accent: "#ffd66b", url: "https://play.google.com/store/apps/details?id=com.mega.stunt.games.mishi.car.racing" },
-  { title: "Tile Match Puzzle Game", studio: "Mishi Games Studio", genre: "Puzzle", icon: "🧩", accent: "#a37bff", url: "https://play.google.com/store/apps/details?id=com.mgs.tilematch.puzzle.explorer.game" },
-  { title: "Gun Game 3d-fps Shooting Games", studio: "Mishi Games Studio", genre: "FPS", icon: "🎯", accent: "#ff5d5d", url: "https://play.google.com/store/apps/details?id=com.mishi.commando.shooting.real.fps" },
-  { title: "Mini Games", studio: "Mishi Games Studio", genre: "Casual", icon: "🎮", accent: "#39e7ff", url: "https://play.google.com/store/apps/details?id=com.msh.fun.mini.games.calm.relax.puzzle" },
-  { title: "Mega Ramp Bike Stunt Games 3D", studio: "Mishi Games Studio", genre: "Stunt", icon: "🏍️", accent: "#ff8a3d", url: "https://play.google.com/store/apps/details?id=bike.stunt.racing.games.moto.master" },
-  { title: "Bus Driving Games : Bus Driver", studio: "Mishi Games Studio", genre: "Simulation", icon: "🚌", accent: "#7dff9b", url: "https://play.google.com/store/apps/details?id=com.coach.bus.simulator.driving.games" },
-  { title: "Car Games: Car Parking 3d Game", studio: "Mishi Games Studio", genre: "Simulation", icon: "🅿️", accent: "#3ad8ff", url: "https://play.google.com/store/apps/details?id=com.parking.games.mishi.simulator" },
-  { title: "Sniper 3D: City Gun Shooting", studio: "Mishi Games Studio", genre: "Shooting", icon: "🔭", accent: "#ff6262", url: "https://play.google.com/store/apps/details?id=com.sniper.shooting.assassin3d.game" },
-  { title: "Zoo Cube: Pop Blast", studio: "gamesodo", genre: "Puzzle", icon: "🦁", accent: "#ffd66b", url: "https://play.google.com/store/search?q=Zoo%20Cube%3A%20Pop%20Blast%20gamesodo&c=apps" },
-  { title: "Supermarket Store Simulator", studio: "gamesodo", genre: "Simulation", icon: "🛒", accent: "#7dff9b", url: "https://play.google.com/store/apps/details?id=com.go.supermarket.store.simulator.game" },
-  { title: "Antistress: Mini Relaxing Game", studio: "gamesodo", genre: "Casual", icon: "🧘", accent: "#ff4fd8", url: "https://play.google.com/store/apps/details?id=com.antistress.relief.relaxing.calming.games" },
-  { title: "Color Water Sort Puzzle Fun", studio: "gamesodo", genre: "Puzzle", icon: "🧪", accent: "#39e7ff", url: "https://play.google.com/store/apps/details?id=com.water.color.sort.puzzle.games3d" },
-  { title: "Garage Tycoon: Idle Car Empire", studio: "gamesodo", genre: "Simulation", icon: "🔧", accent: "#ff8a3d", url: "https://play.google.com/store/apps/details?id=com.go.garage.empire.idle.tycoon.fix.car.mechanic" },
-  { title: "Knock Blast: Ball Smash", studio: "gamesodo", genre: "Arcade", icon: "💥", accent: "#8b5cff", url: "https://play.google.com/store/apps/details?id=com.go.knockblast.ballsmash" },
-  { title: "Bus Color Sort: Parking Jam", studio: "Malam", genre: "Puzzle", icon: "🚍", accent: "#39e7ff", url: "https://play.google.com/store/apps/details?id=com.ma.color.bus.parking.jam.sort.puzzle" },
-  { title: "Color Sort Puzzle Game", studio: "Malam", genre: "Puzzle", icon: "🌈", accent: "#8b5cff", url: "https://play.google.com/store/apps/details?id=com.mlm.offline.water.sort.color.puzzle.games" },
-  { title: "Cooking Shawarma Idle Game", studio: "Malam", genre: "Idle", icon: "🌯", accent: "#ffb454", url: "https://play.google.com/store/apps/details?id=com.mnm.idle.cooking.game.offline" },
-  { title: "Antistress Game Box", studio: "Malam", genre: "Casual", icon: "🕹️", accent: "#ff4fd8", url: "https://play.google.com/store/apps/details?id=com.msht.casual.fun.relaxing.pocket.game" },
-  { title: "3D Bike Stunt Game: Bike Race", studio: "Malam", genre: "Stunt", icon: "🏍️", accent: "#ff7849", url: "https://play.google.com/store/apps/details?id=com.msh.bike.racing.ramps.offline.casual.free" },
-  { title: "Rescue Girl: Solve the Puzzle", studio: "Malam", genre: "Puzzle", icon: "🧠", accent: "#a37bff", url: "https://play.google.com/store/apps/details?id=com.malam.rescue.offline.casual.girl.game" },
-  { title: "Worldcup Soccer Game Champion", studio: "Malam", genre: "Sports", icon: "⚽", accent: "#7dff9b", url: "https://play.google.com/store/apps/details?id=com.msh.ft.soccer.football.game.free" },
-  { title: "Bus Simulator: Driving Games", studio: "Malam", genre: "Simulation", icon: "🚌", accent: "#39e7ff", url: "https://play.google.com/store/search?q=Bus%20Simulator%3A%20Driving%20Games%20Malam&c=apps" }
+  { title: "Nut & Bolt: Screw Puzzle Games", genre: "Puzzle", category: "Puzzle", fallback: "🔩", iconUrl: "https://play-lh.googleusercontent.com/gccHQHPfVwnqhbkqNF7LddY3fHkDMK97xcfvEcwYLJMtwJZ3SHlX2JEJ9SDmLmLgayDoYME8T5lEr3dTiML6Kg=w240-h480", url: "https://play.google.com/store/apps/details?id=com.mgs.nuts.and.bolts.puzzle.game" },
+  { title: "Antistress: Relaxing Toy Games", genre: "Simulation", category: "Simulation", fallback: "🫧", iconUrl: "https://play-lh.googleusercontent.com/xNLY3UU-m7FOjOK3_8L9QEqJ5v1c8ifcg70JTsOpzDI_eBP67Vd-WVjaZ61yU4fVG4VKCz8sUmIcsQ8PQNk8=w240-h480", url: "https://play.google.com/store/apps/details?id=com.mishi.antistress.relief.relaxing.calming.games" },
+  { title: "Arrow Puzzle Games: Arrow Play", genre: "Puzzle", category: "Puzzle", fallback: "🏹", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.mgs.snakeescape.arrow.path.pencil.out" },
+  { title: "Western Girls Fashion Game", genre: "Casual", category: "Casual", fallback: "👗", iconUrl: "https://play-lh.googleusercontent.com/XM1_02TR3_9HYQgTF7qAlul6WCz48Elc8h5gQmBERWBfiQQ1bufRqGT53voaaCBUEdbo56uhXklEs7sKM1E-JQ=w240-h480", url: "https://play.google.com/store/apps/details?id=com.msh.fashion.girl.game.offline.free" },
+  { title: "Ultimate Bottle Flip 3D Game", genre: "Casual", category: "Casual", fallback: "🧴", iconUrl: "https://play-lh.googleusercontent.com/Yq_TYHmJ5hHtn9nVQtAqK-QZJJJ7qmhjLQ3RdiEDdXpZatSrDUeCLiuUqke6xmK_oUh32zvnWxzn5VTSUjRS9hU=w240-h480", url: "https://play.google.com/store/apps/details?id=com.fc.p.jb.water.bottle.flip.tap.jump.game" },
+  { title: "Car Racing - Car Race 3D Game", genre: "Racing", category: "Racing", fallback: "🏎️", iconUrl: "https://play-lh.googleusercontent.com/HwESKoCG_fL9AdmXNIhd5r0utus20VNiKhN4ngP4jbQTbGYRavw_7XEF1TjNb9pRLjeLpIPKJ0jmxSVeqRltTA=w240-h480", url: "https://play.google.com/store/apps/details?id=com.mishi.traffic.rider.car.racing.game" },
+  { title: "Impossible Car Stunt Game 3D", genre: "Stunt", category: "Racing", fallback: "🚗", iconUrl: "https://play-lh.googleusercontent.com/NDzTQLE2-xK9LnXRoVKqRNAanFcxIut3q7cpGkge_Xw9CVNgCpr2EFTqYVv0CQ87FYmkaKtvWVnYvZhxzSTpWA=w240-h480", url: "https://play.google.com/store/apps/details?id=com.mega.stunt.games.mishi.car.racing" },
+  { title: "Tile Match Puzzle Game", genre: "Puzzle", category: "Puzzle", fallback: "🧩", iconUrl: "https://play-lh.googleusercontent.com/5x37WLPprpdpgC-OmZ_lKwJI5xzHARSTzDWedKNtjdpdIk4wmy4DsSDvlShjiCHlfT6SIwoNmlV2GU9BzXLP=w240-h480", url: "https://play.google.com/store/apps/details?id=com.mgs.tilematch.puzzle.explorer.game" },
+  { title: "Gun Game 3D - FPS Shooting", genre: "FPS", category: "Action", fallback: "🎯", iconUrl: "https://play-lh.googleusercontent.com/4AEDk39k0llssoGqKAdEUsiR1PvUNgbHxh8wbR5WoXPbmD2LtdBu_JPk2-XQYrP5ZQao4KCRd92zhUiMt27l=w240-h480", url: "https://play.google.com/store/apps/details?id=com.mishi.commando.shooting.real.fps" },
+  { title: "Mini Games", genre: "Casual", category: "Casual", fallback: "🎮", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.msh.fun.mini.games.calm.relax.puzzle" },
+  { title: "Mega Ramp Bike Stunt Games 3D", genre: "Racing", category: "Racing", fallback: "🏍️", iconUrl: "https://play-lh.googleusercontent.com/m6jaayR2e0Lae74S4ecWZhPnzglwjhpZeYbQHWj5r2qnOZ9dLf4H_pdUusWZ1hbU_E4WblwBWeD_YWuD5xkLYoM=w240-h480", url: "https://play.google.com/store/apps/details?id=bike.stunt.racing.games.moto.master" },
+  { title: "Bus Driving Games: Bus Driver", genre: "Simulation", category: "Simulation", fallback: "🚌", iconUrl: "https://play-lh.googleusercontent.com/2dHcEt1EAn7gjbyp1EWNDtnby3UHHaeLljkucj7vDCigIdaFQxPw_YJvonQSZ2O53M2Y-Ar_OiDWg4BICSLwFA=w240-h480", url: "https://play.google.com/store/apps/details?id=com.coach.bus.simulator.driving.games" },
+  { title: "Car Games: Car Parking 3D", genre: "Simulation", category: "Simulation", fallback: "🅿️", iconUrl: "https://play-lh.googleusercontent.com/XQGZOY3uEnUMMKHmMFp8jHz7e_AiW3lZUi_hLcfMGdrrLMLqOogokoVb-giWBfudDxjrLOGajZnjoZK3ZlejmA=w240-h480", url: "https://play.google.com/store/apps/details?id=com.parking.games.mishi.simulator" },
+  { title: "Sniper 3D: City Gun Shooting", genre: "Shooting", category: "Action", fallback: "🔭", iconUrl: "https://play-lh.googleusercontent.com/twpnS9vcHgAcQIWLVEoheA4gvoWe-KLBDX927bx8c8aKig2xd0gJ07wCTTj3YgjGnT4=w240-h480", url: "https://play.google.com/store/apps/details?id=com.sniper.shooting.assassin3d.game" },
+  { title: "Zoo Cube: Pop Blast", genre: "Puzzle", category: "Puzzle", fallback: "🦁", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.go.animal.pop.blast.puzzle.game" },
+  { title: "Supermarket Store Simulator", genre: "Simulation", category: "Simulation", fallback: "🛒", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.go.supermarket.store.simulator.game" },
+  { title: "Antistress: Mini Relaxing Game", genre: "Simulation", category: "Simulation", fallback: "🧘", iconUrl: "https://play-lh.googleusercontent.com/kFV3t_-KZ5aRY4nSVmi6i0ngKQNr7b9utGSyBt7P3Ye8jHiAPGeBuUT-gsHCuSLP9d9bHZRRjahmvVgP6Cjd=w240-h480", url: "https://play.google.com/store/apps/details?id=com.antistress.relief.relaxing.calming.games" },
+  { title: "Color Sort - Water Sort Puzzle", genre: "Puzzle", category: "Puzzle", fallback: "🧪", iconUrl: "https://play-lh.googleusercontent.com/0f6MICbNlU6h5lZklpiKI6h1epdiZtIFNtYsco1AZJKlDKgz2J3B8dElH2s4G0VV6LbsrU7mObBCby4GofXnfA=w240-h480", url: "https://play.google.com/store/apps/details?id=com.water.color.sort.puzzle.games3d" },
+  { title: "Garage Tycoon: Idle Car Empire", genre: "Arcade / Simulation", category: "Simulation", fallback: "🔧", iconUrl: "https://play-lh.googleusercontent.com/-z15OyrgB63lT3b5t0pXRw1YWR5OMH8OKF5_0MRtXgwRZca3pncVVNwgSxNEM4-Vz2S7Fy9izcX44DnFeCqXMA=w240-h480", url: "https://play.google.com/store/apps/details?id=com.go.garage.empire.idle.tycoon.fix.car.mechanic" },
+  { title: "Knock Blast: Ball Smash", genre: "Arcade", category: "Action", fallback: "💥", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.go.knockblast.ballsmash" },
+  { title: "Bus Color Sort: Parking Jam", genre: "Puzzle", category: "Puzzle", fallback: "🚍", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.ma.color.bus.parking.jam.sort.puzzle" },
+  { title: "Color Sort Puzzle Game", genre: "Puzzle", category: "Puzzle", fallback: "🌈", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.mlm.offline.water.sort.color.puzzle.games" },
+  { title: "Cooking Shawarma Idle Game", genre: "Role Playing", category: "Casual", fallback: "🌯", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.mnm.idle.cooking.game.offline" },
+  { title: "Antistress Relaxing Mini Game", genre: "Casual", category: "Casual", fallback: "🕹️", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.msht.casual.fun.relaxing.pocket.game" },
+  { title: "3D Bike Stunt Game: Bike Race", genre: "Racing", category: "Racing", fallback: "🏍️", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.msh.bike.racing.ramps.offline.casual.free" },
+  { title: "Rescue Girl: Solve the Puzzle", genre: "Strategy", category: "Puzzle", fallback: "🧠", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.malam.rescue.offline.casual.girl.game" },
+  { title: "Worldcup Soccer Game Champion", genre: "Sports", category: "Casual", fallback: "⚽", iconUrl: "", url: "https://play.google.com/store/apps/details?id=com.msh.ft.soccer.football.game.free" },
+  { title: "Bus Simulator: Driving Games", genre: "Simulation", category: "Simulation", fallback: "🚌", iconUrl: "", url: "https://play.google.com/store/search?q=Bus%20Simulator%3A%20Driving%20Games&c=apps" }
 ];
 
 const grid = document.getElementById("gamesGrid");
 const searchInput = document.getElementById("gameSearch");
 const filterButtons = [...document.querySelectorAll(".filter-btn")];
 const gameCount = document.getElementById("gameCount");
-let activeStudio = "all";
+const profileGameCount = document.getElementById("profileGameCount");
+let activeFilter = "all";
 let query = "";
 
-const escapeHtml = (value) => value.replace(/[&<>"']/g, (char) => ({
+const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
 }[char]));
+
+function iconMarkup(game) {
+  if (!game.iconUrl) return `<div class="game-fallback" aria-hidden="true">${game.fallback}</div>`;
+  return `<img src="${game.iconUrl}" alt="${escapeHtml(game.title)} app icon" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<div class=&quot;game-fallback&quot;>${game.fallback}</div>'">`;
+}
 
 function renderGames() {
   const normalizedQuery = query.trim().toLowerCase();
   const visibleGames = games.filter((game) => {
-    const studioMatch = activeStudio === "all" || game.studio === activeStudio;
-    const searchMatch = !normalizedQuery || game.title.toLowerCase().includes(normalizedQuery) || game.genre.toLowerCase().includes(normalizedQuery) || game.studio.toLowerCase().includes(normalizedQuery);
-    return studioMatch && searchMatch;
+    const filterMatch = activeFilter === "all" || game.category === activeFilter;
+    const searchMatch = !normalizedQuery || `${game.title} ${game.genre} ${game.category}`.toLowerCase().includes(normalizedQuery);
+    return filterMatch && searchMatch;
   });
 
-  gameCount.textContent = games.length;
+  if (gameCount) gameCount.textContent = games.length;
+  if (profileGameCount) profileGameCount.textContent = games.length;
+
   if (!visibleGames.length) {
-    grid.innerHTML = '<div class="no-games">No games match that filter. Try another studio or search term.</div>';
+    grid.innerHTML = '<div class="no-games">No games match that filter. Try another category or search term.</div>';
     return;
   }
 
   grid.innerHTML = visibleGames.map((game, index) => `
-    <article class="game-card" style="--card-accent:${escapeHtml(game.accent)}">
-      <div class="game-cover">
+    <article class="game-card">
+      <div class="game-visual">
+        ${game.iconUrl ? `<div class="game-backdrop" style="background-image:url('${game.iconUrl}')"></div>` : ""}
         <span class="game-index">${String(index + 1).padStart(2, "0")}</span>
-        <div class="game-cover-icon" aria-hidden="true">${game.icon}</div>
+        <span class="play-badge"><i class="fa-brands fa-google-play"></i> Play Store</span>
+        <div class="game-icon-frame">${iconMarkup(game)}</div>
       </div>
       <div class="game-body">
-        <div class="game-studio"><span>${escapeHtml(game.studio)}</span><i class="fa-brands fa-google-play" aria-label="Google Play"></i></div>
+        <div class="game-type">${escapeHtml(game.genre)}</div>
         <h3>${escapeHtml(game.title)}</h3>
-        <div class="game-meta"><span>Unity</span><span>${escapeHtml(game.genre)}</span><span>Android</span></div>
-        <a class="game-link" href="${game.url}" target="_blank" rel="noreferrer">View on Google Play <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <div class="game-meta"><span>Unity</span><span>Android</span><span>${escapeHtml(game.category)}</span></div>
+        <a class="game-link" href="${game.url}" target="_blank" rel="noreferrer">View game <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       </div>
     </article>
   `).join("");
@@ -72,23 +82,29 @@ function renderGames() {
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    activeStudio = button.dataset.filter;
+    activeFilter = button.dataset.filter;
     filterButtons.forEach((item) => item.classList.toggle("active", item === button));
     renderGames();
   });
 });
 
-searchInput.addEventListener("input", (event) => { query = event.target.value; renderGames(); });
+if (searchInput) searchInput.addEventListener("input", (event) => {
+  query = event.target.value;
+  renderGames();
+});
+
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
-navToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-});
-navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
-  navLinks.classList.remove("open");
-  navToggle.setAttribute("aria-expanded", "false");
-}));
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+  navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  }));
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -97,8 +113,9 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.10 });
 
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
 renderGames();
