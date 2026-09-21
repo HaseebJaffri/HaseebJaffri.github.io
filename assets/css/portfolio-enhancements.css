@@ -1,0 +1,42 @@
+.game-visual{
+  height:215px !important;
+}
+
+.game-icon-frame{
+  width:132px !important;
+  height:132px !important;
+  border-radius:29px !important;
+  padding:5px !important;
+  box-shadow:0 20px 46px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.05) !important;
+}
+
+.game-icon-frame img{
+  border-radius:24px !important;
+}
+
+.game-fallback{
+  border-radius:24px !important;
+  font-size:3.15rem !important;
+}
+
+.game-card:hover .game-icon-frame{
+  transform:translateY(-3px) scale(1.035);
+  transition:transform .22s ease;
+}
+
+.profile-stats strong,
+.stats-strip strong{
+  font-variant-numeric:tabular-nums;
+  min-width:2ch;
+}
+
+@media(max-width:790px){
+  .game-visual{height:205px !important}
+  .game-icon-frame{width:124px !important;height:124px !important}
+}
+
+@media(max-width:500px){
+  .game-visual{height:190px !important}
+  .game-icon-frame{width:114px !important;height:114px !important;border-radius:25px !important}
+  .game-icon-frame img,.game-fallback{border-radius:20px !important}
+}
