@@ -186,3 +186,8 @@ if (year) year.textContent = new Date().getFullYear();
 
 renderGames();
 setupAnimatedMetrics();
+
+const portfolioPatchScript = document.createElement("script");
+portfolioPatchScript.src = "/assets/js/portfolio-patches.js?v=2";
+portfolioPatchScript.defer = true;
+document.body.appendChild(portfolioPatchScript);
