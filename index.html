@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#070913" />
+  <meta name="theme-color" content="#070611" />
   <meta name="description" content="Haseeb Ali Jaffri — Team Lead, Games Department. Unity game development, mobile publishing, monetization, Firebase, performance optimization and live operations." />
   <meta name="author" content="Haseeb Ali Jaffri" />
   <meta property="og:type" content="website" />
@@ -17,7 +17,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/gaming-portfolio-v2.css?v=3" />
+  <style>
+    .profile-label span{font-size:0!important}
+    .profile-label span::after{content:"TEAM LEAD · GAMES DEPARTMENT";font:700 .64rem/1.2 var(--display);letter-spacing:.18em;color:#b77dff}
+  </style>
 </head>
 <body>
   <div class="noise"></div>
@@ -35,15 +39,16 @@
     </button>
 
     <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#games">Games</a>
       <a href="#experience">Experience</a>
+      <a href="#games">Games</a>
+      <a href="#expertise">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <a class="nav-cta" href="/assets/resume/resume.pdf" target="_blank" rel="noreferrer">
-      Resume <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      <i class="fa-solid fa-download"></i> Resume
     </a>
   </header>
 
@@ -54,55 +59,47 @@
       </div>
 
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> BUILDING · SHIPPING · LEADING</div>
+        <div class="eyebrow"><span class="status-dot"></span> Available for New Projects</div>
         <h1>
-          I build mobile games that
-          <span class="gradient-text">ship, scale & perform.</span>
+          Building Games
+          <span class="gradient-text">Players Love</span>
         </h1>
         <p class="hero-lead">
-          I'm <strong>Haseeb Ali Jaffri</strong>, Team Lead — Games Department, focused on Unity game development,
-          mobile publishing, monetization, performance, analytics and live game operations.
+          <strong>Team Lead — Games Department</strong> with 7+ years of Unity experience building, shipping and optimizing mobile games. Specialized in <strong>Unity, C#, Android, monetization, Firebase and multi-store publishing</strong>.
         </p>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#games"><i class="fa-solid fa-gamepad"></i> Explore Games</a>
-          <a class="btn btn-ghost" href="#contact"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+        <div class="hero-micro">
+          <span><i class="fa-brands fa-unity"></i> Unity 3D / 2D</span>
+          <span><i class="fa-solid fa-code"></i> C#</span>
+          <span><i class="fa-brands fa-android"></i> Android</span>
+          <span><i class="fa-solid fa-chart-line"></i> Live Ops</span>
         </div>
 
-        <div class="hero-micro">
-          <span><i class="fa-solid fa-code"></i> Unity + C#</span>
-          <span><i class="fa-solid fa-mobile-screen-button"></i> Android</span>
-          <span><i class="fa-solid fa-chart-line"></i> Live Ops</span>
-          <span><i class="fa-solid fa-users"></i> Team Leadership</span>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games"><i class="fa-solid fa-gamepad"></i> View My Games</a>
+          <a class="btn btn-ghost" href="#contact"><i class="fa-solid fa-paper-plane"></i> Let's Talk</a>
         </div>
       </div>
 
       <div class="hero-visual reveal">
-        <div class="hud-ring ring-one"></div>
-        <div class="hud-ring ring-two"></div>
         <div class="profile-shell">
           <div class="profile-scan"></div>
           <img src="/assets/img/passport-new.jpg" alt="Haseeb Ali Jaffri" class="profile-image" />
           <div class="profile-label">
-            <span>PLAYER 01</span>
+            <span>Team Lead · Games Department</span>
             <strong>HASEEB</strong>
           </div>
         </div>
 
-        <div class="floating-chip chip-a"><i class="fa-brands fa-unity"></i><span>Unity</span></div>
-        <div class="floating-chip chip-b"><i class="fa-brands fa-android"></i><span>Android</span></div>
-        <div class="floating-chip chip-c"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
-        <div class="floating-chip chip-d"><i class="fa-solid fa-coins"></i><span>Monetization</span></div>
-
         <div class="hero-console">
           <div class="console-top">
-            <span>CAREER_LOADOUT</span>
+            <span>PLAYER PROFILE</span>
             <span class="console-live">ONLINE</span>
           </div>
           <div class="console-row"><span>ROLE</span><strong>Team Lead — Games</strong></div>
-          <div class="console-row"><span>ENGINE</span><strong>Unity</strong></div>
+          <div class="console-row"><span>EXPERIENCE</span><strong>7+ Years</strong></div>
           <div class="console-row"><span>FOCUS</span><strong>Mobile Games</strong></div>
-          <div class="console-bar"><span style="width: 92%"></span></div>
+          <div class="console-bar"><span style="width: 94%"></span></div>
         </div>
       </div>
     </section>
@@ -160,45 +157,31 @@
 
       <div class="expertise-grid">
         <article class="loadout-card reveal">
-          <div class="loadout-head">
-            <span class="loadout-number">A1</span>
-            <i class="fa-solid fa-gamepad"></i>
-          </div>
+          <div class="loadout-head"><span class="loadout-number">A1</span><i class="fa-solid fa-gamepad"></i></div>
           <h3>Game Development</h3>
           <p>Unity, C#, gameplay systems, UI, level flows, debugging, optimization and Android release builds.</p>
           <div class="loadout-tags"><span>Unity</span><span>C#</span><span>Android</span><span>Git</span></div>
         </article>
 
         <article class="loadout-card reveal">
-          <div class="loadout-head">
-            <span class="loadout-number">A2</span>
-            <i class="fa-solid fa-coins"></i>
-          </div>
+          <div class="loadout-head"><span class="loadout-number">A2</span><i class="fa-solid fa-coins"></i></div>
           <h3>Monetization</h3>
           <p>Ad integration and mediation implementation focused on reliable delivery and sustainable revenue.</p>
           <div class="loadout-tags"><span>AdMob</span><span>AppLovin MAX</span><span>TopOn</span></div>
         </article>
 
         <article class="loadout-card reveal">
-          <div class="loadout-head">
-            <span class="loadout-number">A3</span>
-            <i class="fa-solid fa-fire-flame-curved"></i>
-          </div>
+          <div class="loadout-head"><span class="loadout-number">A3</span><i class="fa-solid fa-fire-flame-curved"></i></div>
           <h3>Firebase & Live Ops</h3>
           <p>Measure player behavior, monitor production stability and tune experiences after release.</p>
           <div class="loadout-tags"><span>Analytics</span><span>Crashlytics</span><span>Remote Config</span></div>
         </article>
 
         <article class="loadout-card reveal">
-          <div class="loadout-head">
-            <span class="loadout-number">A4</span>
-            <i class="fa-solid fa-store"></i>
-          </div>
+          <div class="loadout-head"><span class="loadout-number">A4</span><i class="fa-solid fa-store"></i></div>
           <h3>Publishing Ecosystem</h3>
           <p>Experience preparing and publishing mobile titles across Google Play and alternative/OEM stores.</p>
-          <div class="loadout-tags">
-            <span>Google Play</span><span>Transsion</span><span>XGames</span><span>XPlay</span><span>Vivo Store</span><span>Mi Store</span>
-          </div>
+          <div class="loadout-tags"><span>Google Play</span><span>Transsion</span><span>XGames</span><span>XPlay</span><span>Vivo Store</span><span>Mi Store</span></div>
         </article>
       </div>
 
@@ -219,10 +202,7 @@
       <div class="section-heading reveal">
         <span class="section-kicker">03 // SHIPPED GAMES</span>
         <h2>A portfolio built across <span>multiple game accounts.</span></h2>
-        <p>
-          Previous project cards have been replaced with the current games from Mishi Games Studio, gamesodo and Malam.
-          Use the filters to browse each portfolio.
-        </p>
+        <p>Browse the current games from Mishi Games Studio, gamesodo and Malam.</p>
       </div>
 
       <div class="game-toolbar reveal">
@@ -232,24 +212,15 @@
           <button class="filter-btn" data-filter="gamesodo">gamesodo</button>
           <button class="filter-btn" data-filter="Malam">Malam</button>
         </div>
-        <label class="game-search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games" />
-        </label>
+        <label class="game-search"><i class="fa-solid fa-magnifying-glass"></i><input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games" /></label>
       </div>
 
       <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
 
       <div class="studio-links reveal">
-        <a href="https://play.google.com/store/apps/developer?id=Mishi+Games+Studio" target="_blank" rel="noreferrer">
-          Mishi Games Studio <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a href="https://play.google.com/store/apps/developer?id=gamesodo" target="_blank" rel="noreferrer">
-          gamesodo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a href="https://play.google.com/store/apps/developer?id=Malam" target="_blank" rel="noreferrer">
-          Malam <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+        <a href="https://play.google.com/store/apps/developer?id=Mishi+Games+Studio" target="_blank" rel="noreferrer">Mishi Games Studio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="https://play.google.com/store/apps/developer?id=gamesodo" target="_blank" rel="noreferrer">gamesodo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="https://play.google.com/store/apps/developer?id=Malam" target="_blank" rel="noreferrer">Malam <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       </div>
     </section>
 
@@ -260,106 +231,24 @@
       </div>
 
       <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">MAR 2021 — PRESENT · RAWALPINDI</div>
-          <div class="timeline-card current">
-            <div>
-              <span class="timeline-company">JANBARK TECHNOLOGIES</span>
-              <h3>Team Lead — Games Department</h3>
-            </div>
-            <ul>
-              <li>Lead mobile game development and delivery across multiple Android titles.</li>
-              <li>Coordinate development, updates, optimization, debugging and release execution.</li>
-              <li>Integrate and maintain AdMob, AppLovin MAX, TopOn and Firebase services.</li>
-              <li>Support publishing across Google Play, Transsion, XGames, XPlay, Vivo Store and Mi Store.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">AUG 2020 — MAR 2021 · RAWALPINDI</div>
-          <div class="timeline-card">
-            <div>
-              <span class="timeline-company">MICZON LLP</span>
-              <h3>Unity Developer</h3>
-            </div>
-            <ul>
-              <li>Developed games from scratch and delivered feature updates.</li>
-              <li>Optimized existing games for newer mobile devices.</li>
-              <li>Integrated ads and Firebase, then used analytics to guide improvements.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">MAR 2020 — AUG 2020 · RAWALPINDI</div>
-          <div class="timeline-card">
-            <div>
-              <span class="timeline-company">NEXT LINK TECHNOLOGIES</span>
-              <h3>Unity Developer</h3>
-            </div>
-            <ul>
-              <li>Built 3D mobile games across multiple genres.</li>
-              <li>Integrated ads and delivered ongoing features and updates.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">DEC 2017 — JUL 2018 · ISLAMABAD</div>
-          <div class="timeline-card">
-            <div>
-              <span class="timeline-company">TRIBECH SOLUTIONS</span>
-              <h3>Unity Developer</h3>
-            </div>
-            <ul>
-              <li>Developed 3D Play Store games and implemented requested feature updates.</li>
-              <li>Worked with Unity, C# and mobile ad integrations.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">MAY 2016 — OCT 2017 · RAWALPINDI</div>
-          <div class="timeline-card">
-            <div>
-              <span class="timeline-company">JOLTA TECHNOLOGIES</span>
-              <h3>Junior Unity Developer</h3>
-            </div>
-            <ul>
-              <li>Started professional Unity development by building 3D mobile games.</li>
-              <li>Implemented gameplay features and advertising integrations.</li>
-            </ul>
-          </div>
-        </article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-meta">MAR 2021 — PRESENT · RAWALPINDI</div><div class="timeline-card current"><div><span class="timeline-company">JANBARK TECHNOLOGIES</span><h3>Team Lead — Games Department</h3></div><ul><li>Lead mobile game development and delivery across multiple Android titles.</li><li>Coordinate development, updates, optimization, debugging and release execution.</li><li>Integrate and maintain AdMob, AppLovin MAX, TopOn and Firebase services.</li><li>Support publishing across Google Play, Transsion, XGames, XPlay, Vivo Store and Mi Store.</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-meta">AUG 2020 — MAR 2021 · RAWALPINDI</div><div class="timeline-card"><div><span class="timeline-company">MICZON LLP</span><h3>Unity Developer</h3></div><ul><li>Developed games from scratch and delivered feature updates.</li><li>Optimized existing games for newer mobile devices.</li><li>Integrated ads and Firebase, then used analytics to guide improvements.</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-meta">MAR 2020 — AUG 2020 · RAWALPINDI</div><div class="timeline-card"><div><span class="timeline-company">NEXT LINK TECHNOLOGIES</span><h3>Unity Developer</h3></div><ul><li>Built 3D mobile games across multiple genres.</li><li>Integrated ads and delivered ongoing features and updates.</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-meta">DEC 2017 — JUL 2018 · ISLAMABAD</div><div class="timeline-card"><div><span class="timeline-company">TRIBECH SOLUTIONS</span><h3>Unity Developer</h3></div><ul><li>Developed 3D Play Store games and implemented requested feature updates.</li><li>Worked with Unity, C# and mobile ad integrations.</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-meta">MAY 2016 — OCT 2017 · RAWALPINDI</div><div class="timeline-card"><div><span class="timeline-company">JOLTA TECHNOLOGIES</span><h3>Junior Unity Developer</h3></div><ul><li>Started professional Unity development by building 3D mobile games.</li><li>Implemented gameplay features and advertising integrations.</li></ul></div></article>
       </div>
     </section>
 
     <section class="section education-section" id="education">
       <div class="education-card reveal">
         <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-        <div>
-          <span class="section-kicker">05 // EDUCATION</span>
-          <h2>BS Software Engineering</h2>
-          <p>University of Engineering & Technology, Taxila</p>
-          <div class="loadout-tags"><span>OOP</span><span>Programming Fundamentals</span><span>Data Structures</span></div>
-        </div>
+        <div><span class="section-kicker">05 // EDUCATION</span><h2>BS Software Engineering</h2><p>University of Engineering & Technology, Taxila</p><div class="loadout-tags"><span>OOP</span><span>Programming Fundamentals</span><span>Data Structures</span></div></div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
       <div class="contact-card reveal">
-        <div class="contact-copy">
-          <span class="section-kicker">06 // CONTACT</span>
-          <h2>Have a game, product or team challenge?</h2>
-          <p>Let's talk about Unity development, mobile game production, optimization, monetization or publishing.</p>
-        </div>
-
+        <div class="contact-copy"><span class="section-kicker">06 // CONTACT</span><h2>Have a game, product or team challenge?</h2><p>Let's talk about Unity development, mobile game production, optimization, monetization or publishing.</p></div>
         <div class="contact-actions">
           <a href="mailto:s.haseebjaffri@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
           <a href="tel:+923117310754"><i class="fa-solid fa-phone"></i><span>Call</span></a>
@@ -376,6 +265,6 @@
     <a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
   </footer>
 
-  <script src="/assets/js/portfolio.js"></script>
+  <script src="/assets/js/portfolio.js?v=3"></script>
 </body>
 </html>
