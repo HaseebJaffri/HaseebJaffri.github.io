@@ -1,3 +1,10 @@
+const enhancementStyles = document.createElement("link");
+enhancementStyles.rel = "stylesheet";
+enhancementStyles.href = "/assets/css/portfolio-enhancements.css?v=2";
+document.head.appendChild(enhancementStyles);
+
+const TOTAL_GAMES = 100;
+
 const games = [
   { title: "Nut & Bolt: Screw Puzzle Games", genre: "Puzzle", category: "Puzzle", fallback: "🔩", iconUrl: "https://play-lh.googleusercontent.com/gccHQHPfVwnqhbkqNF7LddY3fHkDMK97xcfvEcwYLJMtwJZ3SHlX2JEJ9SDmLmLgayDoYME8T5lEr3dTiML6Kg=w240-h480", url: "https://play.google.com/store/apps/details?id=com.mgs.nuts.and.bolts.puzzle.game" },
   { title: "Antistress: Relaxing Toy Games", genre: "Simulation", category: "Simulation", fallback: "🫧", iconUrl: "https://play-lh.googleusercontent.com/xNLY3UU-m7FOjOK3_8L9QEqJ5v1c8ifcg70JTsOpzDI_eBP67Vd-WVjaZ61yU4fVG4VKCz8sUmIcsQ8PQNk8=w240-h480", url: "https://play.google.com/store/apps/details?id=com.mishi.antistress.relief.relaxing.calming.games" },
@@ -54,9 +61,6 @@ function renderGames() {
     return filterMatch && searchMatch;
   });
 
-  if (gameCount) gameCount.textContent = games.length;
-  if (profileGameCount) profileGameCount.textContent = games.length;
-
   if (!visibleGames.length) {
     grid.innerHTML = '<div class="no-games">No games match that filter. Try another category or search term.</div>';
     return;
@@ -106,16 +110,79 @@ if (navToggle && navLinks) {
   }));
 }
 
-const observer = new IntersectionObserver((entries) => {
+function setCounterTarget(element, target, suffix = "") {
+  if (!element) return;
+  element.dataset.counterTarget = String(target);
+  element.dataset.counterSuffix = suffix;
+  element.textContent = `0${suffix}`;
+}
+
+function animateCounter(element) {
+  if (element.dataset.counterAnimated === "true") return;
+  element.dataset.counterAnimated = "true";
+
+  const target = Number(element.dataset.counterTarget || 0);
+  const suffix = element.dataset.counterSuffix || "";
+  const duration = target >= 100 ? 1600 : 1250;
+  const start = performance.now();
+
+  const tick = (now) => {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const value = Math.round(target * eased);
+    element.textContent = `${value}${suffix}`;
+    if (progress < 1) requestAnimationFrame(tick);
+  };
+
+  requestAnimationFrame(tick);
+}
+
+function setupAnimatedMetrics() {
+  setCounterTarget(profileGameCount, TOTAL_GAMES, "+");
+  setCounterTarget(gameCount, TOTAL_GAMES, "+");
+
+  const gameCountLabel = gameCount?.parentElement?.querySelector("span");
+  if (gameCountLabel) gameCountLabel.textContent = "Games developed";
+
+  const gamesDescription = document.querySelector(".games-section .section-heading p");
+  if (gamesDescription) {
+    gamesDescription.textContent = `A selected set of ${games.length} Google Play titles is linked below from 100+ games I have worked on across different genres.`;
+  }
+
+  const metricElements = [...document.querySelectorAll(".profile-stats strong, .stats-strip strong")];
+  metricElements.forEach((element) => {
+    if (!element.dataset.counterTarget) {
+      const raw = element.textContent.trim();
+      const target = Number.parseInt(raw.replace(/\D/g, ""), 10);
+      const suffix = raw.includes("+") ? "+" : "";
+      if (Number.isFinite(target)) setCounterTarget(element, target, suffix);
+    }
+  });
+
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.45 });
+
+  metricElements.forEach((element) => counterObserver.observe(element));
+}
+
+const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
+      revealObserver.unobserve(entry.target);
     }
   });
 }, { threshold: 0.10 });
 
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
+
 renderGames();
+setupAnimatedMetrics();
